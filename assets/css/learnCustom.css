@@ -839,7 +839,7 @@ color:#fff;
 
 /* ===== Start section of databases ===== */
 .databaseSection{
-  background: url(../images/012.jpg) no-repeat fixed center;
+  background: url(../images/019.webp) no-repeat fixed center;
   background-size: cover;
 }
 .db-flex{
@@ -940,7 +940,7 @@ color:#fff;
 
 /* ===== Start section of games ===== */
 .gamesSection{
-  background:fixed center url(../images/games4.jpg);
+  background:fixed center url(../images/024.webp);
   background-size: cover;
   z-index: 1;
 }
@@ -1114,7 +1114,7 @@ color:#fff;
 
 /* ===== Start section of Machine and Artificial Intelligence ===== */
 .machineSection{
-  background: url(../images/m011.jpg) no-repeat fixed center;
+  background: url(../images/028.webp) no-repeat fixed center;
   background-size: cover;
   text-align: center;
   color:   var(--light-txt);
@@ -1359,25 +1359,25 @@ color:#fff;
     height:100%;
   }
   .carousel-web img{
-    content:url(../images/web_m.png);
+    content:url(../images/029.webp);
   }
   .carousel-mobile img{
-    content:url(../images/mobile_m.png);
+    content:url(../images/030.webp);
   }
   .carousel-desktop img{
-    content:url(../images/desktop_m.png);
+    content:url(../images/031.webp);
   }
   .carousel-database img{
-    content:url(../images/databases_m.png);
+    content:url(../images/032.webp);
   }
   .carousel-games img{
-    content:url(../images/games_m.png);
+    content:url(../images/033.webp);
   }
   .carousel-system img{
-    content:url(../images/systems_m.png);
+    content:url(../images/034.webp);
   }
   .carousel-machine img{
-    content:url(../images/machine_m.png);
+    content:url(../images/035.webp);
   }
   .carousalHead {
     position: absolute;
