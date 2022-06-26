@@ -27,22 +27,47 @@ $(function () {
   let sideMenuItem = $(".sideMenu_item");
   let sub_items = $(".sideMenu_subItems");
 
+  let webSection = document.getElementById("webSection");
+  let webSectionTop = webSection.offsetTop;
+
+  let mobileSection = document.getElementById("mobileSection");
+  let mobileSectionTop = mobileSection.offsetTop;
+
+  let desktopSection = document.getElementById("desktopSection");
+  let desktopSectionTop = desktopSection.offsetTop;
+
+  let databaseSection = document.getElementById("databaseSection");
+  let databaseSectionTop = databaseSection.offsetTop;
+
+  let gamesSection = document.getElementById("gamesSection");
+  let gamesSectionTop = gamesSection.offsetTop;
+  
+  let systemSection = document.getElementById("systemSection");
+  let systemSectionTop = systemSection.offsetTop;
+
+  let machineSection = document.getElementById("machineSection");
+  let machineSectionTop = machineSection.offsetTop;
+
   sideMenu_Show.click(function () {
     side_menu.animate({ right: "0px" }, 200);
-    $(".fullOverrideBlack").css("opacity", "1");
+    // $(".fullOverrideBlack").css("opacity", "1");
     $(this).hide();
-  });
-  $(".mobileMenuIcon").click(function () {
-    side_menu.animate({ right: "0px" }, 200);
-    $(this).css("visibility", "hidden")
+    $("html, body").css("overflow", "hidden");
   });
 
+  $(".mobileMenuIcon").click(function () {
+    side_menu.animate({ right: "0px" }, 200);
+    $(this).css("visibility", "hidden");
+    $("html, body").css("overflow", "hidden");
+  });
+  
   $("#sideMenuHeader_close").click(function () {
     side_menu.animate({ right: "-100%" }, 200);
     $(".mobileMenuIcon").css("visibility", "visible");
     sub_items.slideUp();
-    $(".fullOverrideBlack").css("opacity", "0");
+    // $(".fullOverrideBlack").css("opacity", "0");
     sideMenu_Show.show();
+    $("html, body").css("overflow", "auto");
   });
 
   sideMenuItem.click(function () {
@@ -124,39 +149,39 @@ $('.navLi').click(function () {
   //   // $("html, body").animate({ scrollTop: 0 });
   //   alert('ji');
   // });
-
+const beforeSection = 80;
   nav_webSection.click(function (){
-    $("html, body").animate({ scrollTop: 2270 });
+    $("html, body").animate({ scrollTop: webSectionTop - beforeSection});
   });
 
   nav_mobileSection.click(function (){
-    $("html, body").animate({ scrollTop: 3575 });
+    $("html, body").animate({ scrollTop: mobileSectionTop - beforeSection});
   });
 
   nav_desktopSection.click(function (){
-    $("html, body").animate({ scrollTop: 4815 });
+    $("html, body").animate({ scrollTop: desktopSectionTop - beforeSection });
   });
 
   nav_databaseSection.click(function (){
-    $("html, body").animate({ scrollTop: 6570});
+    $("html, body").animate({ scrollTop: databaseSectionTop - beforeSection + 50});
   });
 
   nav_gamesSection.click(function (){
-    $("html, body").animate({ scrollTop: 7330 });
+    $("html, body").animate({ scrollTop: gamesSectionTop - beforeSection - 20});
   });
   
   nav_systemSection.click(function (){
-    $("html, body").animate({ scrollTop: 7940 });
+    $("html, body").animate({ scrollTop: systemSectionTop - beforeSection });
   });
 
   nav_machineSection.click(function (){
-    $("html, body").animate({ scrollTop: 9760 });
+    $("html, body").animate({ scrollTop: machineSectionTop - beforeSection });
   });
 
   $(window).scroll(function () {
-    console.log($(this).scrollTop());
+    // console.log(window.scrollY);
+    // console.log($(this).scrollTop());
     if ($(this).scrollTop() >= 100) {
-      console.log("value = " + $(this).scrollTop());
       // $(".navCustom").css("position", "fixed");
       $(".navCustom").css("box-shadow","0 1px 5px #555");
       $(".navCustom").css("background-color","#fff");
@@ -181,7 +206,7 @@ $('.navLi').click(function () {
         $('.overBlack_mobile').css("opacity", "1");
       } 
       //>>>> Mobile section active
-      else if (($(this).scrollTop() >= 3525) & ($(this).scrollTop() < 4695)) {
+      else if (($(this).scrollTop() >= mobileSectionTop - 200) & ($(this).scrollTop() < 4695)) {
         $('.mobileActive').addClass("activeR").siblings().removeClass("activeR");
         $('.overBlack_mobile').css("opacity", "0");
         $('.overBlack_mobile').css("z-index", "-1");
@@ -232,11 +257,11 @@ $('.navLi').click(function () {
 
     function scrollGamesIncrement(){
       if (showGame == false){
-        $("html, body").animate({ scrollTop: $(this).scrollTop()+235 });
+        $("html, body").animate({ scrollTop: $(this).scrollTop() + 150 });
         showGame = true;
       }
       else{
-        $("html, body").animate({ scrollTop: $(this).scrollTop()-235 });
+        $("html, body").animate({ scrollTop: gamesSectionTop - beforeSection - 20});
         showGame = false;
       }
     }
@@ -285,3 +310,10 @@ $('.navLi').click(function () {
 
     // ================================================= End Java Script File ================================================= //
   });
+
+
+  console.log(mobileSection.offsetTop);
+  // let scrollValue = window.scrollY;
+  // window.onscroll = function(){
+  //   console.log(scrollValue);
+  // }
