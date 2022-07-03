@@ -23,6 +23,7 @@
   text-decoration: none;
   word-spacing: 1px;
   scroll-behavior: smooth;
+  user-select: none;
 }
 a{
   text-decoration: none;
@@ -1124,6 +1125,9 @@ color:#fff;
 .allContentMachine{
   position: relative;
   z-index: 2;
+}
+.machine-link{
+  color:whitesmoke;
 }
 /* ===== Start section of Machine and Artificial Intelligence ===== */
 
