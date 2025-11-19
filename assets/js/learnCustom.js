@@ -79,7 +79,7 @@ $(function () {
   // =========== End Slide Bar Menu Section ============================== //
 
   // ==================== Start Color Theme Section ========================== //
-  $(".colorStyleIcon").click(function () {});
+  // $(".colorStyleIcon").click(function () {});
   
   $(".colorStyleIcon").click(function () {
     $("#testStyle").slideToggle(200);
@@ -126,7 +126,7 @@ $(function () {
     
   });
 
-  $(".Pempe").click(function () {
+  $(".Purple").click(function () {
     rootColor.css("--main-color", "#c200c2");
     rootColor.css("--main-txt-color", "#fff");
     $(this).addClass("selected").siblings().removeClass("selected");
@@ -179,19 +179,20 @@ const beforeSection = 80;
   });
 
   $(window).scroll(function () {
+    let navCustom = $(".navCustom")
     // console.log(window.scrollY);
     // console.log($(this).scrollTop());
     if ($(this).scrollTop() >= 100) {
       // $(".navCustom").css("position", "fixed");
-      $(".navCustom").css("box-shadow","0 1px 5px #555");
-      $(".navCustom").css("background-color","#fff");
+      navCustom.css("box-shadow","0 1px 5px #555");
+      navCustom.css("background-color","#fff");
     }
     else {
         // $(".navCustom").css("position", "relative");
-        $(".navCustom").css("box-shadow","none");
-        $(".navCustom").css("background-color","#a1cadd");
+      navCustom.css("box-shadow","none");
+      navCustom.css("background-color","#a1cadd");
         $('.home').addClass("activeR").siblings().removeClass("activeR");
-      };
+      }
 
       //>>>> Home section active
       if ($(this).scrollTop() < 2220) {
@@ -199,35 +200,35 @@ const beforeSection = 80;
         $('.overBlack_web').css("opacity", "1");
       } 
       //>>>> Web section active
-      else if (($(this).scrollTop() >= 2220) & ($(this).scrollTop() < 3525)) {
+      else if (($(this).scrollTop() >= 2220) && ($(this).scrollTop() < 3525)) {
         $('.webActive').addClass("activeR").siblings().removeClass("activeR");
         $('.overBlack_web').css("opacity", "0");
         $('.overBlack_web').css("z-index", "-1");
         $('.overBlack_mobile').css("opacity", "1");
       } 
       //>>>> Mobile section active
-      else if (($(this).scrollTop() >= mobileSectionTop - 200) & ($(this).scrollTop() < 4695)) {
+      else if (($(this).scrollTop() >= mobileSectionTop - 200) && ($(this).scrollTop() < 4695)) {
         $('.mobileActive').addClass("activeR").siblings().removeClass("activeR");
         $('.overBlack_mobile').css("opacity", "0");
         $('.overBlack_mobile').css("z-index", "-1");
         $('.overBlack_desktop').css("opacity", "1");
       } 
       //>>>> Desktop section active
-      else if (($(this).scrollTop() >= 4765) & ($(this).scrollTop() < 6500)) {
+      else if (($(this).scrollTop() >= 4765) && ($(this).scrollTop() < 6500)) {
         $('.desktopActive').addClass("activeR").siblings().removeClass("activeR");
         $('.overBlack_desktop').css("opacity", "0");
         $('.overBlack_desktop').css("z-index", "-1");
         $('.overBlack_database').css("opacity", "1");
       }
       //>>>> Database section active
-      else if (($(this).scrollTop() >= 6500) & ($(this).scrollTop() < 7250)) {
+      else if (($(this).scrollTop() >= 6500) && ($(this).scrollTop() < 7250)) {
         $('.databaseActive').addClass("activeR").siblings().removeClass("activeR");
         $('.overBlack_database').css("opacity", "0");
         $('.overBlack_database').css("z-index", "-1");
         $('.overBlack_games').css("opacity", "1");
       }
       //>>>> Games section active
-      else if (($(this).scrollTop() >= 7250) & ($(this).scrollTop() < 7870)) {
+      else if (($(this).scrollTop() >= 7250) && ($(this).scrollTop() < 7870)) {
         $('.gamesActive').addClass("activeR").siblings().removeClass("activeR");
         $('.overBlack_games').css("opacity", "0");
         $('.overBlack_games').css("z-index", "-1");
@@ -235,7 +236,7 @@ const beforeSection = 80;
       }
 
       //>>>> System and Network section active
-      else if (($(this).scrollTop() >= 7870) & ($(this).scrollTop() < 9675)) {
+      else if (($(this).scrollTop() >= 7870) && ($(this).scrollTop() < 9675)) {
         $('.systemActive').addClass("activeR").siblings().removeClass("activeR");
         $('.overBlack_systemAndNetwork').css("opacity", "0");
         $('.overBlack_systemAndNetwork').css("z-index", "-1");
@@ -256,7 +257,7 @@ const beforeSection = 80;
     let showGame = false;
 
     function scrollGamesIncrement(){
-      if (showGame == false){
+      if (showGame === false){
         $("html, body").animate({ scrollTop: $(this).scrollTop() + 150 });
         showGame = true;
       }
@@ -312,7 +313,7 @@ const beforeSection = 80;
   });
 
 
-  console.log(mobileSection.offsetTop);
+  // console.log(mobileSection.offsetTop);
   // let scrollValue = window.scrollY;
   // window.onscroll = function(){
   //   console.log(scrollValue);
