@@ -1,5 +1,4 @@
 /* ===== Start section of Global Variables ===== */
-
 :root {
   --main-color: #1987af;
   --secondary-color: #75003b;
@@ -12,10 +11,7 @@
 }
 /* ===== End section of Global Variables ===== */
 
-
 /* ===== Start section of Global Rules ===== */
-
-
 * {
   box-sizing: border-box;
   text-decoration: none;
@@ -33,37 +29,29 @@ a:hover{
 html {
   scroll-behavior: smooth;
 }
-
-
 body {
   font-family: 'Droid Arabic Kufi', Arial, sans-serif;
   position: relative;
 }
-.overColor{
-  background: rgba(0,0,0,0.2);
+.overColor, .overBlack_machine, .overBlack_systemAndNetwork, .overBlack_games, .overBlack_database, .overBlack_desktop, .overBlack_mobile, .overBlack_web{
   position: absolute;
   right: 0;
   left: 0;
   top: 0;
   bottom: 0;
+}
+.overColor{
+  background: rgba(0,0,0,0.2);
   z-index: 1;
 }
-
 .overBlack_machine, .overBlack_systemAndNetwork, .overBlack_games, .overBlack_database, .overBlack_desktop, .overBlack_mobile, .overBlack_web{
   width: 100%;
   height: 100%;
-  position: absolute;
-  right: 0;
-  left: 0;
-  top: 0;
-  bottom: 0;
   opacity:1;
   background-color: rgba(0,0,0,0.8);
   transition: all ease-in-out 1s;
   z-index: 3;
 }
-
-
 .allSectionMainTitleDiv{
   display: flex;
   justify-content: center;
@@ -78,19 +66,16 @@ body {
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   box-shadow:  12px 0 0 0 var(--main-color),
-              0 0 5PX 0 var(--main-color);
+                0 0 5PX 0 var(--main-color);
   text-align: center;
   padding: 20px 50px;
   margin-bottom: 0.5rem;
   line-height: 2.5rem;
 }
-
 .allSection-subTitle{
   box-shadow: 0 2px 2px 0 rgba(66, 64, 64, 0.849);
-  /* transform: skewX(3deg); */
   background-color: var(--main-color);
   color:var(--light-txt);
-  /* border-radius: 3px; */
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   font-size:1.05rem;
@@ -107,13 +92,9 @@ body {
   padding-bottom: 30px;
   z-index: 0;
 }
-
 /* ===== End section of Global Rules ===== */
 
-
-
 /* ===== Start section of Full slide Menu Style ===== */
-
 .sideMenu{
   display: flex;
   justify-content: flex-start;
@@ -136,8 +117,6 @@ body {
   flex-direction: row;
   width:100%;
   padding:16px 10px;
-
-
 }
 .sideMenuHeader_logo .fa-code{
   width: 50px;
@@ -262,7 +241,6 @@ body {
   align-items: center;
   margin-right:20px;
 }
-
 .sideMenuFooter h5{
   font-size: 0.8rem;
   font-weight: bold;
@@ -295,13 +273,11 @@ body {
 }
 /* =====End full override div Black section /* =====*/
 
-
 /* ===== Start section of color style Element ===== */
 .toUp{
   position:fixed;
   bottom:16px;
   right:-42px;
-  /* right:20px; */
   width: 40px;
   height: 40px;
   border: 3px solid #fff;
@@ -331,6 +307,7 @@ body {
   background: var(--main-color);
 }
 /*   <!-- End To up Element --> */
+
 /*   <!-- Start color style Element --> */
 .colorStyle{
   position:fixed;
@@ -356,20 +333,13 @@ body {
   background-color: var(--main-color);
   z-index:990;
   color:  var(--light-txt);
-  /* background-color:rgb(17, 0, 255); */
   cursor: pointer;
 }
 .colorStyle #testStyle{
   padding:10px 15px;
   margin: 0;
-  /* left:0; */
-  /* width: 60px; */
-  /*display:flex;*/
   flex-direction:column;
-  /* justify-content: center; */
-  /* align-items: center; */
   background-color: var(--main-color);
-  /* background-color:rgb(0, 153, 64);  */
   display: none;             
 }
 .colorStyle li{
@@ -406,17 +376,12 @@ body {
 }
 /* ===== End section of color style Element ===== */
 
-
-
 /* ===== Start section of header ===== */
-
 .header {
   position: relative;
-  /* height:90vh; */
-  background:#e8eef3;
+  background-color:#e8eef3;
   overflow:hidden;
 }
-
 .navCustom {
     width: 100% !important;
     position: fixed;
@@ -426,7 +391,6 @@ body {
     background-color: #a1cadd;
     font-family: Cairo, sans-serif;
     overflow: hidden;
-    /*z-index: 2;*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -437,37 +401,10 @@ h1 a {
   color:var(--main-color);
   transition: all 0.35s ease;
 }
-/* h1 a:hover {
-  color:var(--main-color)
-} */
-/* .navCustom:before{
-  content: "";
-  border-width: 40px;
-  position:absolute;
-  top: 0;
-  left: -30px;
-  border-color: #a1cadd transparent #a1cadd  #a1cadd;
-  border-style: solid;
-  z-index: 0;
-
-
-}
-.navCustom:after{
-  content: "";
-  border-width: 40px;
-  position:absolute;
-  top: 0;
-  right: -30px;
-  border-color: #a1cadd #a1cadd #a1cadd transparent;
-  border-style: solid;
-  z-index: 0;
-
-} */
 .nav_BrandAndMenu, .navBrand{
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
 .navBrand .logo, .sideMenu .sideMenuHeader .sideMenuHeader_logo{
   width: 50px;
@@ -567,10 +504,7 @@ h1 a {
 .mobileMenuIcon .fa-bars:hover{
   color: var(--secondary-color);
 }
-
-
 /* ===== End section of header ===== */
-
 
 /* ===== Start section of before programming ===== */
 .before_programming{
@@ -582,7 +516,6 @@ h1 a {
   z-index: 1;
   position: inherit;
 }
-
 .before_programmingTitle h3{
   text-align: center;
   color:var(--secondary-color);
@@ -599,7 +532,6 @@ h1 a {
   text-align:center;
   z-index: 1;
 }
-
 .btn-groups{
   display:flex;
   justify-content:center;
@@ -619,12 +551,6 @@ h1 a {
 .btn-groups button:hover a{
 color:#fff;
 }
-/* .before_programmingBtn :nth-child(1),.before_programmingBtn :nth-child(4){
-  background:#004094;
-}
-.before_programmingBtn :nth-child(2),.before_programmingBtn :nth-child(3){
-  background:#8a0083;
-} */
 .before_programmingBtn button a{
   color:#ddd;
   text-decoration: none;
@@ -642,7 +568,6 @@ color:#fff;
 }
 /* ===== End section of before programming ===== */
 
-
 /* ===== Start section of Be like their ===== */
 .like_their{
   background-color:#c5ddef;
@@ -650,7 +575,6 @@ color:#fff;
   text-align: center;
   padding:3rem 0;
 }
-
 .like_their_Title{
   padding: 20px 0;
   margin-bottom: 20px;
@@ -677,7 +601,6 @@ color:#fff;
 }
 /* ===== End section of Be like their ===== */
 
-
 /* ===== Start section of webpages ===== */
 .webSection{
   background: #a1cadd;
@@ -685,12 +608,10 @@ color:#fff;
   background: linear-gradient(90deg, #a1cadd 0%, #1987af 100%);
   font-family: 'Cairo', sans-serif;
   text-align: center;
-  /*color:   var(--light-txt);*/
   color: #011618;
   font-size: 2rem;
   overflow: hidden;
 }
-
 .upWeb{
   position: relative;
   display:flex;
@@ -742,12 +663,8 @@ color:#fff;
 }
 /* ===== End section of webpages ===== */
 
-
 /* ===== Start section of mobile and desktop ===== */
 .mobileSection{
-  /* background: #1987af;
-  background: -webkit-linear-gradient(44deg, #1987af 0%, #a1cadd 100%);
-  background: linear-gradient(44deg, #1987af 0%, #a1cadd 100%); */
   background: whitesmoke;
 }
 .desktopSection{
@@ -756,14 +673,9 @@ color:#fff;
   background: linear-gradient(44deg, #a1cadd 0%, #1987af 100%);
 }
 
-
 .mobileSection_All,
 .desktopSection_All{
   border:2px solid var(--main-color);
-  /* display: flex;
-  align-items: center;
-  flex-direction: column;
-  padding: 0; */
 }
 
 .mobile-note:nth-child(odd){
@@ -779,7 +691,6 @@ color:#fff;
   padding: 20px;
   border-radius: 10px;
 }
-
 .mobile-note:nth-child(even){
   width: 100%;
   font-size: 1rem;
@@ -793,7 +704,6 @@ color:#fff;
   padding: 20px;
   border-radius: 10px;
 }
-
 .mobileSection_Android, .mobileSection_Ios,
 .desktopSection_Windows, .desktopSection_Mac, .desktopSection_Linux, .machineMenu_item, .systemMenu_item_Title, .networkMenu_item{
   box-shadow: 0 0 6px 1px var(--main-color);
@@ -804,35 +714,17 @@ color:#fff;
   flex-direction:column;
   text-align: center;
 }
-
-/* .androidContent_Title p, .iosContent_Title p,
-.windowsContent_Title p, .macContent_Title p, .linuxContent_Title p{
-  font-size:1.1em;
-  font-weight: 600;
-  text-align: center;
-  margin-top: 1rem;
-  margin-bottom: 0;
-  color:#000;
-  text-align: center;
-} */
-
 .btn-dark{
   border:none;
 }
 .btn-groups button {
   border: 1px solid #1989afee;
   font-weight: bold
-
 }
 .btn_Links .btn-groups button:hover a {
   color: whitesmoke
 }
-.hvr-sweep-to-left:before{
-  /* background: #4fc4ee99; */
-  /* box-shadow: 0 4px 0 0 var(--secondary-color); */
-}
 /* ===== End section of mobile and desktop ===== */
-
 
 /* ===== Start section of databases ===== */
 .databaseSection{
@@ -852,8 +744,6 @@ color:#fff;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background:rgba(100, 100, 100, 0.3); */
-  /* box-shadow: 0 0 2px 0 #000000; */
 }
 .db_image{
   margin-bottom: 0.5rem;
@@ -866,7 +756,6 @@ color:#fff;
   display: inherit;
   flex-direction:column;
 }
-
 .db_TextContent p{
   background:rgba(190, 231, 255, 0.726);
   border-bottom: var(--main-color) 3px solid;
@@ -888,7 +777,6 @@ color:#fff;
   padding: 10px 0;
 }
 .databaseProgrammingLanguages_img{
-  /*margin-top: 2px;*/
   display: flex;
   flex-direction: row;
   justify-content:space-around;
@@ -912,7 +800,6 @@ color:#fff;
 }
 .databasePL{
   cursor: pointer;
-  /*color:var(--main-color);*/
   font-size:1.4rem;
   padding:15px 25px;
   font-weight: bold;
@@ -934,7 +821,6 @@ color:#fff;
 }
 /* ===== End section of databases ===== */
 
-
 /* ===== Start section of games ===== */
 .gamesSection{
   background:fixed center url(../images/024.webp);
@@ -955,7 +841,6 @@ color:#fff;
   flex-direction: column;
 }
 .gamesTitle{
-  /* background: #000; */
   color: #fff;
   padding-top: 4rem;
 
@@ -982,9 +867,7 @@ color:#fff;
   justify-content: center;
   align-items: center;
   color: rgb(175, 230, 250,0.5);
-  /* font-size: 3rem; */
   padding: 3rem 0;
-
 }
 .gamesContent  .gamesProgrammingLanguages_Name .gamesPL{
   width: 175px;
@@ -997,7 +880,6 @@ color:#fff;
   border-radius: 50%;
   transition: all 0.3s;
   font-size: 1.75rem;
-
 }
 .gamesContent .gamesProgrammingLanguages_Name :nth-child(odd){
   border-top: 3px solid rgb(175, 230, 250,0.5);
@@ -1009,16 +891,13 @@ color:#fff;
   box-shadow: inset -1px 1px 40px 0 #afe6fa,
               inset 1px -1px 40px 0 #afe6fa;
               color: rgb(175, 230, 250);
-  /* transform: scale(1.5); */
   border-radius: 50%;
-  /* background:#000; */
 }
 .gamesContent  .gamesProgrammingLanguages_Name :nth-child(even){
   border-bottom: 3px solid rgb(175, 230, 250,0.5);
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
 }
-
 .g_programmingLanguageSelected{  
   display: flex;
   justify-content: center;
@@ -1026,14 +905,12 @@ color:#fff;
   transition: all 0.3s;
 }
 .g_selected{
-  /* background: #000; */
   border-top: 2px solid var(--lightBlueCustom);
   padding: 25px;
   width: 80%;
   color:#fff;
   overflow: hidden;
   text-align: center;
-
 }
 .gamesHide{
   display:none;
@@ -1041,32 +918,23 @@ color:#fff;
 .g_selected_active{
   display:block;
 }
-
-  .games-btn-group{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    color:rgb(175, 230, 250,0.5);
-    border-color:rgb(175, 230, 250,0.5);
-  }
-  .games-btn-group button{
-    padding:0 30px;
-  }
-  .games-btn-group button:hover a{
-    color:#fff;
-  }
+.games-btn-group{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  color:rgb(175, 230, 250,0.5);
+  border-color:rgb(175, 230, 250,0.5);
+}
+.games-btn-group button{
+  padding:0 30px;
+}
+.games-btn-group button:hover a{
+  color:#fff;
+}
 /* ===== End section of games ===== */
 
-
 /* ===== Start section of Systems and Networks ===== */
-
-/* .systemAndNetworkSection{
-  padding: 0;
-  text-align: center;
-  overflow: hidden;
-  color:   var(--light-txt);
-} */
 .systemSection{
   color:#000;
   font-weight: bolder;
@@ -1105,9 +973,7 @@ color:#fff;
   z-index: 2;
   outline : #fff solid 4px;
 }
-
 /* ===== End section of Systems and Networks ===== */
-
 
 /* ===== Start section of Machine and Artificial Intelligence ===== */
 .machineSection{
@@ -1117,7 +983,6 @@ color:#fff;
   color:   var(--light-txt);
   overflow: hidden;
 }
-
 .allContentMachine{
   position: relative;
   z-index: 2;
@@ -1126,7 +991,6 @@ color:#fff;
   color:whitesmoke;
 }
 /* ===== Start section of Machine and Artificial Intelligence ===== */
-
 
 /* ===== Start footer section ===== */
 .footer{
@@ -1139,9 +1003,6 @@ color:#fff;
   border: 1px solid var(--main-color);
   padding: 10px 0;
 }
-/* .chanel, .books{
-  border:1px solid var(--main-color)
-} */
 .list-group{
   padding: 10px;
 }
@@ -1153,14 +1014,12 @@ color:#fff;
   margin-bottom: 5px;
   transition: all 0.3s;
   color:#555;
-  /* width:fit-content */
 }
 .list-group li a{
   color:#afafaf;
   text-decoration: none;
   padding-right: 10px;
   transition: all 0.3s;
-
 }
 .list-group li a:hover{
   color:#e7e7e7;
@@ -1168,9 +1027,6 @@ color:#fff;
 .list-group li:hover{
   box-shadow: 0 0 2px 0 #888888;
 }
-/* .socialLink{
-  padding-bottom: 15px;
-} */
 .socialLink ul{
   margin: 0;
   padding: 0;
@@ -1193,7 +1049,6 @@ color:#fff;
   background-color:red;
 }
 .socialLink ul .facebook:hover{
-  /*background-color:#3b5998;*/
   background-color:#0078d7;
 }
 .socialLink ul .whatsapp:hover{
@@ -1211,13 +1066,7 @@ color:#fff;
   flex-direction: column;
   padding: 10px 0;
 }
-/* .footerCopyRight p{
-  padding: 0;
-  margin: 3px 0;
-} */
 /* ===== End footer section ===== */
-
-
 
 /* Start Bootstrap Edit style */
 .btn{
@@ -1247,7 +1096,6 @@ color:#fff;
   margin: 0 3px;
   box-shadow: 0 0 2px 1px var(--main-color);
 }
-
 .active_btn::after{
   content: "";
   width: 10px;
@@ -1259,27 +1107,18 @@ color:#fff;
   top:calc( 50% - 5px);
 }
 .card{
+  position: relative;
   transition: all 0.3s;
+  height: 550px;
 }
 .card:hover{
-  /* box-shadow: -0.5px -0.5px 3px -5px #595959,
-              10px 0 5px -2px #1987af,
-              0 0 5px 0 #1987af !important; */
   box-shadow: 0 0 30px 0 #858585 !important;
-
-  /* -webkit-box-shadow: -1px 32px 32px -23px #2a0808;
-  -moz-box-shadow: -1px 32px 32px -23px #2a0808;
-  box-shadow: 0 20px 25px -23px #333 !important; */
-
   border-radius:0;
   transform: scale(1.02) translateY(-10px);
-
   z-index: 777;
-
 }
 .card img {
-  /* min-height: 225px;
-  max-height: 325px; */
+  height: 300px; 
 }
 .card text{
   color: var(--main-color);
@@ -1294,9 +1133,8 @@ color:#fff;
   color: var(--light-txt) !important;
   box-shadow: -3px 3px 0 0 #99999999;
   margin: 5px;
+  border-radius: 5px;
 }
-
-
 .carousel-indicators {
   position: absolute;
   top: 50%;
